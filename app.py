@@ -36,8 +36,8 @@ Our technology-driven solutions ensure that your company stands out in the compe
 st.title("Welcome to Better Life's Dashboard")
 
 # Section for user queries
-st.header("Have Questions About Better Life?")
-st.markdown("We're here to help. Ask us anything about how we can aid your company in reaching its full potential through influencer collaborations.")
+st.header("Have Questions About Better Lifes KLO Algorithm?")
+st.markdown("We're here to help. Ask us anything about how we can aid your company in reaching its full potential through collaborations with the most influential community in the USA.")
 
 # User input for questions
 user_query = st.text_area("Enter your question here", help="Type your question and hit enter. We'll get back to you as soon as possible.")
@@ -47,7 +47,7 @@ def generate_text(prompt):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "You are a helpful assistant who works for better life. Give answers from the information given to you."},
             {"role": "user", "content": prompt}
         ]
 
