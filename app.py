@@ -5,10 +5,11 @@ import openai
 
 # Initialize the OpenAI client with your API key
 api_key='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'
-
+openai.api_key = api_key
+client = OpenAI(api_key='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') 
 
 # Set the OpenAI API key
-openai.api_key = api_key
+
 
 # Streamlit page configuration
 st.set_page_config(
@@ -40,16 +41,17 @@ user_query = st.text_area("Enter your question here", help="Type your question a
 
 # Function to generate text with GPT-3.5-turbo
 def generate_text(prompt):
-    response = openai.chat.completions.create(
-        engine="gpt-3.5-turbo",
-        prompt=prompt,
-        temperature=0.5,
-        max_tokens=100,
-        top_p=1.0,
-        frequency_penalty=0.0,
-        presence_penalty=0.0
-    )
-    return response.choices[0].text.strip()
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
+
+	)
+    print(response)
+    return response.choices[0].message.content.strip()
+
 
 documentation="""
 
