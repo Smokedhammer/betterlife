@@ -6,8 +6,8 @@ from PIL import Image
 # Initialize the OpenAI client with your API key
 #api_key='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'
 #openai.api_key = api_key
-from openai import OpenAI
-client = OpenAI(api_key='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') 
+
+client = openai(api_key='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') 
 
 # Set the OpenAI API key
 
