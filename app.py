@@ -37,7 +37,7 @@ st.title("Welcome to Better Life's Dashboard")
 
 # Section for user queries
 st.header("Have Questions About Better Lifes KLO Algorithm?")
-st.markdown("We're here to help. Ask us anything about how we can aid your company in reaching its full potential through collaborations with the most influential community in the USA.")
+st.markdown("We're here to help. Ask us anything about how we can aid your company in reaching its full potential through collaborations with the most influential community in United States.")
 
 # User input for questions
 user_query = st.text_area("Enter your question here", help="Type your question and hit enter. We'll get back to you as soon as possible.")
