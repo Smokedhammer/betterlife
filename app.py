@@ -6,6 +6,10 @@ import openai
 # Initialize the OpenAI client with your API key
 api_key='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'
 
+
+# Set the OpenAI API key
+openai.api_key = api_key
+
 # Streamlit page configuration
 st.set_page_config(
     page_title="Better Life", 
