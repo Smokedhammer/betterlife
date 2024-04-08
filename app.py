@@ -1,7 +1,9 @@
 # Import necessary libraries
 import streamlit as st
 from PIL import Image
-#import openai
+!pip install openai
+
+from openai import OpenAI
 
 # Initialize the OpenAI client with your API key
 #api_key='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'
