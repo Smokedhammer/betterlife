@@ -1,7 +1,7 @@
 # Import necessary libraries
 import streamlit as st
 from PIL import Image
-!pip install openai
+
 
 from openai import OpenAI
 
