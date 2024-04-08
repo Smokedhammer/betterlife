@@ -40,7 +40,7 @@ user_query = st.text_area("Enter your question here", help="Type your question a
 
 # Function to generate text with GPT-3.5-turbo
 def generate_text(prompt):
-    response = openai.Completion.create(
+    response = openai.chat.completions.create(
         engine="gpt-3.5-turbo",
         prompt=prompt,
         temperature=0.5,
