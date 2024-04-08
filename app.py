@@ -4,7 +4,7 @@ from PIL import Image
 import openai
 
 # Initialize the OpenAI client with your API key
-openai.api_key = 'your_api_key_here'
+api_key='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'
 
 # Streamlit page configuration
 st.set_page_config(
@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Display company logo and welcome message in the sidebar
-logo = Image.open('better_life_logo.png')  # Ensure the logo image file is in your project directory
+logo = Image.open('logo.png')  # Ensure the logo image file is in your project directory
 st.sidebar.image(logo, use_column_width=True)
 st.sidebar.markdown("# Welcome to Better Life!")
 
